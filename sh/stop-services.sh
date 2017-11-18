@@ -5,3 +5,4 @@ sudo service mongod stop
 sudo service teamviewerd stop
 sudo service apache2 stop
 sudo service transmission-daemon stop
+sudo service WowzaStreamingEngine stop

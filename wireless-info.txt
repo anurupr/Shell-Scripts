@@ -1,0 +1,387 @@
+
+########## wireless info START ##########
+
+Report from: 14 Oct 2016 16:56 AST +0300
+
+Booted last: 14 Oct 2016 16:38 AST +0300
+
+Script from: 30 Apr 2015 17:23 UTC +0000
+
+##### release ###########################
+
+Distributor ID:	LinuxMint
+Description:	Linux Mint 17.3 Rosa
+Release:	17.3
+Codename:	rosa
+
+##### kernel ############################
+
+Linux 3.19.0-32-generic #37~14.04.1-Ubuntu SMP Thu Oct 22 09:41:40 UTC 2015 x86_64 x86_64 x86_64 GNU/Linux
+
+Parameters: ro, quiet, splash, vt.handoff=7
+
+##### desktop ###########################
+
+KDE Plasma Workspace
+
+##### lspci #############################
+
+05:00.0 Ethernet controller [0200]: Realtek Semiconductor Co., Ltd. RTL8111/8168/8411 PCI Express Gigabit Ethernet Controller [10ec:8168] (rev 06)
+	Subsystem: ASUSTeK Computer Inc. P8P67 and other motherboards [1043:8432]
+	Kernel driver in use: r8169
+
+##### lsusb #############################
+
+Bus 005 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 009 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 008 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 004 Device 003: ID 13b1:0020 Linksys WUSB54GC v1 802.11g Adapter [Ralink RT73]
+Bus 004 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 007 Device 002: ID 413c:2107 Dell Computer Corp. 
+Bus 007 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 003 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+Bus 006 Device 002: ID 046d:c077 Logitech, Inc. 
+Bus 006 Device 001: ID 1d6b:0001 Linux Foundation 1.1 root hub
+Bus 002 Device 001: ID 1d6b:0003 Linux Foundation 3.0 root hub
+Bus 001 Device 001: ID 1d6b:0002 Linux Foundation 2.0 root hub
+
+##### PCMCIA card info ##################
+
+##### rfkill ############################
+
+0: phy0: Wireless LAN
+	Soft blocked: no
+	Hard blocked: no
+
+##### lsmod #############################
+
+rt73usb                32768  0 
+rt2x00usb              24576  1 rt73usb
+rt2x00lib              57344  2 rt73usb,rt2x00usb
+mac80211              708608  2 rt2x00lib,rt2x00usb
+cfg80211              524288  2 mac80211,rt2x00lib
+crc_itu_t              16384  2 rt73usb,firewire_core
+wmi                    20480  0 
+
+##### interfaces ########################
+
+auto lo
+iface lo inet loopback
+
+##### ifconfig ##########################
+
+eth0      Link encap:Ethernet  HWaddr <MAC 'eth0' [IF]>  
+          UP BROADCAST MULTICAST  MTU:1500  Metric:1
+          RX packets:0 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:0 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:0 (0.0 B)  TX bytes:0 (0.0 B)
+
+wlan0     Link encap:Ethernet  HWaddr <MAC 'wlan0' [IF]>  
+          inet addr:192.168.100.4  Bcast:192.168.100.255  Mask:255.255.255.0
+          UP BROADCAST RUNNING MULTICAST  MTU:1500  Metric:1
+          RX packets:14414 errors:0 dropped:0 overruns:0 frame:0
+          TX packets:13099 errors:0 dropped:0 overruns:0 carrier:0
+          collisions:0 txqueuelen:1000 
+          RX bytes:6423951 (6.4 MB)  TX bytes:1648709 (1.6 MB)
+
+##### iwconfig ##########################
+
+eth0      no wireless extensions.
+
+lo        no wireless extensions.
+
+wlan0     IEEE 802.11bg  ESSID:"RAVEENDRAN"  
+          Mode:Managed  Frequency:2.412 GHz  Access Point: <MAC 'RAVEENDRAN' [AC1]>   
+          Bit Rate=54 Mb/s   Tx-Power=20 dBm   
+          Retry short limit:7   RTS thr:off   Fragment thr:off
+          Power Management:on
+          Link Quality=56/70  Signal level=-54 dBm  
+          Rx invalid nwid:0  Rx invalid crypt:0  Rx invalid frag:0
+          Tx excessive retries:0  Invalid misc:97   Missed beacon:0
+
+##### route #############################
+
+Kernel IP routing table
+Destination     Gateway         Genmask         Flags Metric Ref    Use Iface
+0.0.0.0         192.168.100.1   0.0.0.0         UG    0      0        0 wlan0
+192.168.100.0   0.0.0.0         255.255.255.0   U     0      0        0 wlan0
+
+##### resolv.conf #######################
+
+nameserver 192.168.100.1
+
+##### NetworkManager info ###############
+
+./wireless_script: line 201: nmcli: command not found
+
+./wireless_script: line 203: nmcli: command not found
+
+##### NetworkManager.state ##############
+
+cat: /var/lib/NetworkManager/NetworkManager.state: No such file or directory
+
+##### NetworkManager.conf ###############
+
+grep: /etc/NetworkManager/NetworkManager.conf: No such file or directory
+
+##### NetworkManager profiles ###########
+
+Acquisition of admin privileges failed.
+
+##### iw reg get ########################
+
+Region: Asia/Bahrain (based on set time zone)
+
+country US:
+	(2402 - 2472 @ 40), (3, 27)
+	(5170 - 5250 @ 40), (3, 17)
+	(5250 - 5330 @ 40), (3, 20), DFS
+	(5490 - 5600 @ 40), (3, 20), DFS
+	(5650 - 5710 @ 40), (3, 20), DFS
+	(5735 - 5835 @ 40), (3, 30)
+	(57240 - 63720 @ 2160), (N/A, 40)
+
+##### iwlist channels ###################
+
+eth0      no frequency information.
+
+lo        no frequency information.
+
+wlan0     11 channels in total; available frequencies :
+          Channel 01 : 2.412 GHz
+          Channel 02 : 2.417 GHz
+          Channel 03 : 2.422 GHz
+          Channel 04 : 2.427 GHz
+          Channel 05 : 2.432 GHz
+          Channel 06 : 2.437 GHz
+          Channel 07 : 2.442 GHz
+          Channel 08 : 2.447 GHz
+          Channel 09 : 2.452 GHz
+          Channel 10 : 2.457 GHz
+          Channel 11 : 2.462 GHz
+          Current Frequency:2.412 GHz (Channel 1)
+
+##### iwlist scan #######################
+
+Channel occupancy:
+
+      1   APs on   Frequency:2.412 GHz (Channel 1)
+      1   APs on   Frequency:2.462 GHz (Channel 11)
+
+eth0      Interface doesn't support scanning.
+
+lo        Interface doesn't support scanning.
+
+wlan0     Scan completed :
+          Cell 01 - Address: <MAC 'RAVEENDRAN' [AC1]>
+                    Channel:1
+                    Frequency:2.412 GHz (Channel 1)
+                    Quality=50/70  Signal level=-60 dBm  
+                    Encryption key:on
+                    ESSID:"RAVEENDRAN"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 9 Mb/s
+                              18 Mb/s; 36 Mb/s; 54 Mb/s
+                    Bit Rates:6 Mb/s; 12 Mb/s; 24 Mb/s; 48 Mb/s
+                    Mode:Master
+                    Extra:tsf=000000b2e1d9cdf4
+                    Extra: Last beacon: 16ms ago
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+          Cell 02 - Address: <MAC 'RAVEENDRAN-1' [AC2]>
+                    Channel:11
+                    Frequency:2.462 GHz (Channel 11)
+                    Quality=60/70  Signal level=-50 dBm  
+                    Encryption key:on
+                    ESSID:"RAVEENDRAN-1"
+                    Bit Rates:1 Mb/s; 2 Mb/s; 5.5 Mb/s; 11 Mb/s; 6 Mb/s
+                              9 Mb/s; 12 Mb/s; 18 Mb/s
+                    Bit Rates:24 Mb/s; 36 Mb/s; 48 Mb/s; 54 Mb/s
+                    Mode:Master
+                    Extra:tsf=000000f2aa73916e
+                    Extra: Last beacon: 20ms ago
+                    IE: IEEE 802.11i/WPA2 Version 1
+                        Group Cipher : CCMP
+                        Pairwise Ciphers (1) : CCMP
+                        Authentication Suites (1) : PSK
+
+##### module infos ######################
+
+[rt73usb]
+filename:       /lib/modules/3.19.0-32-generic/kernel/drivers/net/wireless/rt2x00/rt73usb.ko
+license:        GPL
+firmware:       rt73.bin
+description:    Ralink RT73 USB Wireless LAN driver.
+version:        2.3.0
+author:         http://rt2x00.serialmonkey.com
+srcversion:     BCF882E0CB338C7C3C172CF
+depends:        rt2x00lib,rt2x00usb,crc-itu-t
+intree:         Y
+vermagic:       3.19.0-32-generic SMP mod_unload modversions 
+signer:         Magrathea: Glacier signing key
+sig_key:        0C:8B:EF:E0:C1:E2:89:E4:D8:99:09:26:11:7A:DA:3B:DF:EB:41:9C
+sig_hashalgo:   sha512
+parm:           nohwcrypt:Disable hardware encryption. (bool)
+
+[rt2x00usb]
+filename:       /lib/modules/3.19.0-32-generic/kernel/drivers/net/wireless/rt2x00/rt2x00usb.ko
+license:        GPL
+description:    rt2x00 usb library
+version:        2.3.0
+author:         http://rt2x00.serialmonkey.com
+srcversion:     B51D09F4F13F9196B61EBE4
+depends:        rt2x00lib,mac80211
+intree:         Y
+vermagic:       3.19.0-32-generic SMP mod_unload modversions 
+signer:         Magrathea: Glacier signing key
+sig_key:        0C:8B:EF:E0:C1:E2:89:E4:D8:99:09:26:11:7A:DA:3B:DF:EB:41:9C
+sig_hashalgo:   sha512
+
+[rt2x00lib]
+filename:       /lib/modules/3.19.0-32-generic/kernel/drivers/net/wireless/rt2x00/rt2x00lib.ko
+license:        GPL
+description:    rt2x00 library
+version:        2.3.0
+author:         http://rt2x00.serialmonkey.com
+srcversion:     7C3B03973B59C2A2A136B6C
+depends:        mac80211,cfg80211
+intree:         Y
+vermagic:       3.19.0-32-generic SMP mod_unload modversions 
+signer:         Magrathea: Glacier signing key
+sig_key:        0C:8B:EF:E0:C1:E2:89:E4:D8:99:09:26:11:7A:DA:3B:DF:EB:41:9C
+sig_hashalgo:   sha512
+
+[mac80211]
+filename:       /lib/modules/3.19.0-32-generic/kernel/net/mac80211/mac80211.ko
+license:        GPL
+description:    IEEE 802.11 subsystem
+srcversion:     6AE775D26377F997426A49D
+depends:        cfg80211
+intree:         Y
+vermagic:       3.19.0-32-generic SMP mod_unload modversions 
+signer:         Magrathea: Glacier signing key
+sig_key:        0C:8B:EF:E0:C1:E2:89:E4:D8:99:09:26:11:7A:DA:3B:DF:EB:41:9C
+sig_hashalgo:   sha512
+parm:           minstrel_vht_only:Use only VHT rates when VHT is supported by sta. (bool)
+parm:           max_nullfunc_tries:Maximum nullfunc tx tries before disconnecting (reason 4). (int)
+parm:           max_probe_tries:Maximum probe tries before disconnecting (reason 4). (int)
+parm:           beacon_loss_count:Number of beacon intervals before we decide beacon was lost. (int)
+parm:           probe_wait_ms:Maximum time(ms) to wait for probe response before disconnecting (reason 4). (int)
+parm:           ieee80211_default_rc_algo:Default rate control algorithm for mac80211 to use (charp)
+
+[cfg80211]
+filename:       /lib/modules/3.19.0-32-generic/kernel/net/wireless/cfg80211.ko
+description:    wireless configuration support
+license:        GPL
+author:         Johannes Berg
+srcversion:     F28307769349A31F4B24FC2
+depends:        
+intree:         Y
+vermagic:       3.19.0-32-generic SMP mod_unload modversions 
+signer:         Magrathea: Glacier signing key
+sig_key:        0C:8B:EF:E0:C1:E2:89:E4:D8:99:09:26:11:7A:DA:3B:DF:EB:41:9C
+sig_hashalgo:   sha512
+parm:           ieee80211_regdom:IEEE 802.11 regulatory domain code (charp)
+parm:           cfg80211_disable_40mhz_24ghz:Disable 40MHz support in the 2.4GHz band (bool)
+
+##### module parameters #################
+
+[rt73usb]
+nohwcrypt: N
+
+[mac80211]
+beacon_loss_count: 7
+ieee80211_default_rc_algo: minstrel_ht
+max_nullfunc_tries: 2
+max_probe_tries: 5
+minstrel_vht_only: Y
+probe_wait_ms: 500
+
+[cfg80211]
+cfg80211_disable_40mhz_24ghz: N
+ieee80211_regdom: 00
+
+##### /etc/modules ######################
+
+lp
+rtc
+
+it87
+
+##### modprobe options ##################
+
+[/etc/modprobe.d/blacklist-ath_pci.conf]
+blacklist ath_pci
+
+[/etc/modprobe.d/blacklist.conf]
+blacklist evbug
+blacklist usbmouse
+blacklist usbkbd
+blacklist eepro100
+blacklist de4x5
+blacklist eth1394
+blacklist snd_intel8x0m
+blacklist snd_aw2
+blacklist i2c_i801
+blacklist prism54
+blacklist bcm43xx
+blacklist garmin_gps
+blacklist asus_acpi
+blacklist snd_pcsp
+blacklist pcspkr
+blacklist amd76x_edac
+
+[/etc/modprobe.d/blacklist-rare-network.conf]
+alias net-pf-3 off
+alias net-pf-6 off
+alias net-pf-9 off
+alias net-pf-11 off
+alias net-pf-12 off
+alias net-pf-19 off
+alias net-pf-21 off
+alias net-pf-36 off
+
+[/etc/modprobe.d/iwlwifi.conf]
+remove iwlwifi \
+(/sbin/lsmod | grep -o -e ^iwlmvm -e ^iwldvm -e ^iwlwifi | xargs /sbin/rmmod) \
+&& /sbin/modprobe -r mac80211
+
+[/etc/modprobe.d/mlx4.conf]
+softdep mlx4_core post: mlx4_en
+
+##### rc.local ##########################
+
+exit 0
+
+##### pm-utils ##########################
+
+##### udev rules ########################
+
+[/etc/udev/rules.d/70-persistent-net.rules]
+# PCI device 0x10ec:0x8168 (r8169)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="<MAC 'eth0' [IF]>", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="eth*", NAME="eth0"
+# USB device 0x:0x (rt73usb)
+SUBSYSTEM=="net", ACTION=="add", DRIVERS=="?*", ATTR{address}=="<MAC 'wlan0' [IF]>", ATTR{dev_id}=="0x0", ATTR{type}=="1", KERNEL=="wlan*", NAME="wlan0"
+
+##### dmesg #############################
+
+[  132.543810] ieee80211 phy0: rt2x00lib_request_firmware: Info - Loading firmware file 'rt73.bin'
+[  132.556938] ieee80211 phy0: rt2x00lib_request_firmware: Info - Firmware detected - version: 1.7
+[  141.675199] wlan0: authenticate with <MAC 'RAVEENDRAN' [AC1]>
+[  141.718379] wlan0: send auth to <MAC 'RAVEENDRAN' [AC1]> (try 1/3)
+[  141.719944] wlan0: authenticated
+[  141.722623] wlan0: associate with <MAC 'RAVEENDRAN' [AC1]> (try 1/3)
+[  141.727163] wlan0: RX AssocResp from <MAC 'RAVEENDRAN' [AC1]> (capab=0xc11 status=0 aid=1)
+[  141.737140] wlan0: associated
+[  398.289980] wlan0: deauthenticating from <MAC 'RAVEENDRAN' [AC1]> by local choice (Reason: 3=DEAUTH_LEAVING)
+[  402.873049] wlan0: authenticate with <MAC 'RAVEENDRAN' [AC1]>
+[  402.913471] wlan0: send auth to <MAC 'RAVEENDRAN' [AC1]> (try 1/3)
+[  402.915114] wlan0: authenticated
+[  402.916362] wlan0: associate with <MAC 'RAVEENDRAN' [AC1]> (try 1/3)
+[  402.918982] wlan0: RX AssocResp from <MAC 'RAVEENDRAN' [AC1]> (capab=0xc11 status=0 aid=1)
+[  402.928823] wlan0: associated
+
+########## wireless info END ############
+

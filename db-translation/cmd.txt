@@ -1,0 +1,2 @@
+mongify translation database.config > translation_file.rb
+mongify process database.config translation_file.rb
